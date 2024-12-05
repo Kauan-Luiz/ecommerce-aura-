@@ -27,3 +27,26 @@ produtoMiniatura[2].onclick = function(){
 produtoMiniatura[3].onclick = function(){
     produtoImg.src = produtoMiniatura[3].src;
 }
+
+
+//CARROSEL 
+
+
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function() {
+    nextImage();
+}, 2000);
+
+function nextImage() {
+    count++;
+    if (count > 4) {
+        count = 1; 
+    }
+    document.getElementById("radio" + count).checked = true;
+}
+
+
+
+

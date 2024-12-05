@@ -134,7 +134,7 @@ p{
 }
 
 .corpo-categorias{
-    max-width: 1080px;
+    max-width: 1300px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -151,6 +151,108 @@ p{
     object-fit: cover;
     object-position: center;
 }
+
+.slider{
+    margin-top: 50px;
+    width: 1250px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 60px;
+}
+
+.slides{
+    width: 400%;
+    height: 480px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1250px;
+   height: 100%;
+    object-fit: cover;
+}
+
+.navegacao-manual{
+    position: absolute;
+    width: 1250px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--cor-fonte);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: var(--cor-padrao);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--cor-padrao);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+   
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 1250px;
+    margin-top: 440px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: var(--cor-fonte);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: var(--cor-fonte);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--cor-fonte);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: var(--cor-fonte);
+}
+
 
 .col-4{
     flex-basis: 25%;
@@ -172,7 +274,7 @@ p{
 .titulo{
     position: relative;
     line-height: 60px;
-    margin: 0 auto 80px;
+    margin: 50px auto 40px;
     text-align: center;
     color: var(--cor-fonte-corpo);
 }
@@ -196,17 +298,87 @@ h4{
 
 .col-4 p {
     font-size: 14px;
+    color: var(--cor-btn-fonte);
 }
 
 .classificacao{
     color: var(--cor-estrela);
 }
 
+/*-----------OFERTAS-----------*/
+
 .ofertas{
     background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
     margin-top: 80px;
     padding: 30px 0;
 }
+
+.ofertas h2{
+    color: var(--cor-fonte);
+    text-align: center;
+    font-size: 22pt;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    color: white;
+    background-color: #555;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilos de cores específicas para cada ícone */
+  .instagram {
+    background-color: #e4405f; /* Instagram */
+  }
+
+  .shopee {
+    background-color: #fb2e2f; /* Shopee */
+  }
+
+  .whatsapp {
+    background-color: #25d366; /* WhatsApp */
+  }
+
+  /* Alteração das cores no hover */
+  .instagram:hover {
+    background-color: #d62d41;
+  }
+
+  .shopee:hover {
+    background-color: #f4511e;
+  }
+
+  .whatsapp:hover {
+    background-color: #128c7e;
+  }
+
+  .social-icons a i {
+    font-size: 36px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover i {
+    color: #fff;
+  }
+
 .col-2 oferta-img{
     padding: 50px;
 
@@ -238,7 +410,7 @@ small{
     width: 50px;
     border-radius: 50%;
     margin-top: 20px;
-    border: 2px solid var(--cor-padrao);
+
 }
 .depoimento-icone{
     color: var(--cor-padrao);
@@ -279,9 +451,9 @@ small{
 
 /*-----------rodapé-----------*/
 
+
 .rodape {
-    display: flex; 
-    flex-wrap: wrap;  
+    display: flex;  
     justify-content: space-between; 
     background: var(--cor-btn-fonte);
     color: var(--cor-fonte);
@@ -298,17 +470,15 @@ small{
     margin-top: 20px;
 }
 
-.rodape-col-1, .rodape-col-2, .rodape-col-3, .rodape-col-4{
+
+
+ .rodape-col-1, .rodape-col-2, .rodape-col-3{
     min-width: 250px;
     margin-bottom: 20px;
 }
 
-.rodape-col-1{
-    flex-basis: 30%;
-}
 
 .rodape-col-2{
-    flex: 1;
     text-align: center;
 
 }
@@ -318,21 +488,22 @@ small{
     margin-bottom: 20px;
 }
 
-.rodape-col-3, .rodape-col-4{
-    flex-basis: 12%;
+.rodape-col-3, .rodape-col-1{
+    flex-basis: auto;
+    
+}
+.rodape-col-3{
+    text-align: right;
+}
+
+.rodape-col-4{
+    text-align: left;
 }
 
 ul{
     list-style-type: none;
 }
 
-.app-logo{
-    margin-top: 20px;
-}
-
-.app-logo img{
-    width: 140px;
-}
 
 .rodape hr{
     border: none;
@@ -386,6 +557,7 @@ ul{
     line-height: 40px;
     margin-left: 10px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .paginacao span:hover{
