@@ -839,6 +839,8 @@ th:last-child{
         display: block;
         cursor: pointer;
     }
+
+    
 }
 
 @media only screen and (max-width: 600px){
@@ -851,7 +853,21 @@ th:last-child{
     
 
     .col-2 h1{
-        font-size: 27px;
+        font-size: 22px;
+        margin: 0;
+    }
+
+    #btn-banner{
+        font-size: 12px;
+    }
+
+
+    #descricao-banner{
+        font-size: 10px;
+    }
+
+    .image-menu{
+     width: 80%;
     }
 
     .rodape-col-3, .rodape-col-4{
@@ -885,9 +901,7 @@ th:last-child{
         display: none;
     }
 
-    .img-login{
-        display: none;
-    }
+    
 }
 
 /*MEDIA PARA O CAROUSEL RESPONSIVO.*/
