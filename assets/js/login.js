@@ -1,15 +1,7 @@
-let MenuItens = document.getElementById("MenuItens");
 
-MenuItens.style.maxHeight = "0px";
 
-function menucelular(){
-    if(MenuItens.style.maxHeight == "0px"){
-        MenuItens.style.maxHeight = "200px"
-    }else{
-        MenuItens.style.maxHeight = "0px"
-    }
-    
-}
+
+
 
 let EntrarPainel = document.getElementById("EntrarPainel")
 let CadastroSite = document.getElementById("CadastroSite")

@@ -5,11 +5,14 @@ MenuItens.style.maxHeight = "0px";
 function menucelular(){
     if(MenuItens.style.maxHeight == "0px"){
         MenuItens.style.maxHeight = "200px"
+        MenuItens.style.marginTop = "30px"; 
     }else{
         MenuItens.style.maxHeight = "0px"
+        MenuItens.style.marginTop = "0px";
     }
-    
+       
 }
+
 
 var produtoImg = document.getElementById("produtoImg")
 
