@@ -840,8 +840,22 @@ th:last-child{
         cursor: pointer;
     }
 
+    .slider{
     
-}
+        height: 280px;    
+    }
+    
+    .slides{    
+        height: 280px;
+        
+    }
+    
+    .navigation-auto {
+        
+        margin-top: 240px;
+    }
+    
+ }
 
 @media only screen and (max-width: 600px){
 
@@ -874,7 +888,22 @@ th:last-child{
         text-align: center;
     }
 
+ 
+   .slider{
+        height: 280px;    
+    }
     
+    .slides{
+        
+        height: 280px;  
+        
+    }
+    
+    .navigation-auto {
+        
+        margin-top: 240px;
+    }
+
     .col-4 p {
         font-size: 24px;
     }
@@ -917,4 +946,12 @@ th:last-child{
         width: 100%;
     }
     
+}
+
+@media only screen and (max-width: 455px) {
+    .col-4 {
+        min-width: 150px;
+   
+    }
+
 }
