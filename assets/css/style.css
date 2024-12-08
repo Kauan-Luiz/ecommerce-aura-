@@ -32,6 +32,8 @@ body{
     color: var(--cor-fonte);
 }
 
+
+
 .banner .linha{
     margin-top: 70px;
 }
@@ -806,7 +808,32 @@ th:last-child{
     transition: transform 1s;
 }
 
+/*----------Sobre nos-----------*/
 
+.logo-sobre-nos{
+    width: 400px
+    
+}
+
+
+.sobre-nos h2{
+    padding: 20px;
+    
+}
+.sobre-nos p{
+    color: var(--cor-btn-fonte);
+    font-size: 16px;
+    padding: 20px;
+}
+
+.sobre-nos .linha-sobre-nos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 120px;
+
+    
+}
 
 /*----------Menu celular-----------*/
 
@@ -852,6 +879,10 @@ th:last-child{
         margin-top: 240px;
     }
     
+    .linha-sobre-nos{
+        flex-direction: column;
+    }
+
     footer .linha{
         display: flex;
         flex-direction: column;
